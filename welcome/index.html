@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Animation</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link href="https://fonts.googleapis.com/css?family=Great+Vibes&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Fjalla+One&display=swap" rel="stylesheet">
+
+
+	<style type="text/css">
+		@font-face{
+
+font-family: 'Great Vibes', cursive;
+
+}
+*{
+	perspective: 600px
+}
+		.total{
+           
+           width: 400px;
+           height: 450px;
+           margin: 100px auto;
+           background: #ddd;
+           position: relative;
+           font-size: 100px;
+          font-family: 'Great Vibes', cursive;
+          text-align: center;
+          /* animation: moving 2s ease-in  5; */
+          
+
+        }
+    
+       
+		.itam{
+            position: absolute;
+            width: 200px;
+            height: 240px;
+            background: #13232f;
+            top: 194px;
+            left:87px;
+            text-align: center;
+            color:#1e202b;
+            font-size: 26px;
+            font-weight: bold;
+            text-transform: capitalize;
+            transition: .8s;
+
+		}
+		i{
+			display: inline-block;
+            position: absolute;
+			color: #FF3D6A;
+			top: 84px;
+			left: 145px;
+			transition: all .6s ease-in-out;
+			animation: heart .5s ease-in-out  infinite 
+		}
+    .content{
+      padding-top: 50px;
+      color:#fff;
+      text-transform: capitalize;
+      cursor: pointer;
+      transition: .8s;
+    }
+    .content:hover {
+        color:#1ab188;
+
+    }
+    .itam:hover{
+        background-color:lightgreen;
+        color: blue;
+
+    }
+		@keyframes heart{
+         
+         0%,100%{
+         	color: #FF3D6A;
+           transform:scale(1);    
+               }
+         30%{
+    
+             color: #cf358d ;
+            transform: scale(1.1);
+              
+    }
+    70%{
+
+    	color:red;
+   	transform: scale(1);
+
+		}
+		90%{
+			   	transform: scale(.9);
+
+		}
+
+    }
+  
+    span{
+      font-family: tahoma;
+      font-weight: normal;
+      color:red;
+
+    }
+    @media only screen and (max-width: 1200px){
+      .total{
+        width: 300px;
+
+      }
+      .itam{
+        left:60px;
+
+      }
+      i{
+        left:110px
+      }
+    }
+
+	</style>
+
+</head>
+<body>
+ 
+	<div class="total">
+      <i class="fa fa-heart"></i> 
+      <div class="itam">
+        <p class="content">hello Dear you are most welcome !</p>
+	      <span></span>
+
+     </div>
+  </div>
+  <p id="letter"></p>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script type="text/javascript">
+
+//   var arrName = ["","3mor","3mora","mySon","alrjol al8amed bslamto","Almo3qd","alhlass Alkbeer","ally bouz a5laay","alsoker bzeada"];
+
+
+
+// var i=0;
+// setInterval(function(){
+//   if(i<=arrName.length){
+//     $("span").text(arrName[i])
+//          i++;
+//        }else{
+//         i=0;
+//        }
+         
+// },1000)
+
+
+   
+</script>
+</body>
+</html>

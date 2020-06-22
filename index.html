@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+        <title>login and register form </title>
+        <meta charset="utf-8">
+        <meta name="" content="width=device-width, initial-scale=1, shrink-to-fit=no"> 
+        <meta name="descrption" content="so much words ">
+        <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+
+      
+        <link rel="stylesheet" type="text/css" href="bootstrap.min.css">
+      
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+        <link rel="stylesheet" href="css/style.css">
+     </head>
+      <body>
+
+    <section class="container">
+      <main>
+        <div class="tab">
+          <div id="login-tab" class="active">
+            log in
+          </div>
+          <div id="register-tab">
+            sign up
+        </div>
+      </div>
+        <div id="loginForm">
+            <div class="form-group">
+              <input  type="email"  id="login-email" placeholder=" email">
+              <p style="width: 100%;" class="emailError" hidden>please enter valid email 
+                like  <span style="color: lightgray; ">abc@gmail.com</span></p>
+
+            </div>
+            <div class="form-group">
+              <input  type="password"  id="login-password" placeholder="password">
+              <i  id ="showLogin" class="fa fa-eye eye"></i>
+              <i  id="hideLogin" class="fa fa-eye eye"></i> 
+              <p style="width: 100%;" class="passwordError" hidden>please enter valid
+                 password like  <span style="color: lightgray; ">abc12DF</span></p>
+
+            </div>
+            <div class="form-group">
+              <input type="submit" class="btn" id="loginBtn" value="login" style="background-color: gray;" disabled>
+            </div>
+            <p class="text-center link-account">do'nt have an account ? <a  href="#register">signup</a></p>
+            <p class="text-center link-forget"> <a href="forgetpassword.html">forget password ?</a></p>
+        </div>
+
+        <div id="registerForm" hidden>
+
+            <div class="form-group">
+              <input  type="text"  id="register-fname" placeholder="first name">
+              <p class="fnameError" hidden>please enter valid name</p>
+            </div>
+            <div class="form-group">
+              <input  type="text"  id="register-lname" placeholder="last name">
+              <p class="lnameError" hidden>please enter valid name</p>
+
+            </div>
+            <div class="form-group">
+              <input  type="email"  id="register-email" placeholder="email">
+              <p style="width: 100%;" class="emailError" hidden>please enter valid email like 
+                 <span style="color: lightgray; ">abc@gmail.com</span></p>
+
+              
+            </div>
+            <div class="form-group">
+              <input  type="password"  id="register-password" placeholder="password">
+              <i  id ="showPass" class="fa fa-eye eye"></i>
+               <i  id="hidePass" class="fa fa-eye eye"></i> 
+              <p style="width: 100%;" class="passwordError" hidden>please enter valid password like 
+                 <span style="color: lightgray; ">abc12DF</span></p>
+
+            </div>
+            <div class="form-group">
+              <input  type="password"  id="register-confirmPassword" placeholder="confirm password">
+              <i  id ="showConfirm" class="fa fa-eye eye"></i>
+              <i  id="hideConfirm" class="fa fa-eye eye"></i> 
+              <p style="width: 100%;" class="passwordConfirmError" hidden>
+                this is not match with password
+              </p>
+            </div>
+            <div class="form-group">
+              <select id="sele" required>
+                <option id="gander" value="g">Gander</option>
+                <option id="boy" value="m">Male</option>
+                <option id="girl" value="f">Famle</option>
+
+              </select>
+            </div>
+            <div class="form-group">
+              <input type="submit" id="rigesterBtn" class="btn btn-register" value="register" style="background-color: gray;" disabled>
+            </div>
+        </div>
+        
+      </main>
+    </section>
+ 
+       <script src="js/jquery-3.2.1.min.js"></script>
+        <script src="js/popper.min.js"></script>
+        <script src="js/bootstrap.min.js"></script> 
+        <script src="js/main.js">
+            
+            
+        
+        </script>
+
+      </body>
+ </html>
